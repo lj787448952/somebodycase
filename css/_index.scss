@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+//font-size
+.p24{
+    font-size: 24px;
+}
+
+//line-height
+.lh-2{
+    line-height: 2em;
+}
+
+//margin-bottom
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-56{
+    margin-bottom: 56px;
+}
+.mb-68{
+    margin-bottom: 68px;
+}
+.mb-160{
+    margin-bottom: 160px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content-img{
+    display: flex;
+}
+.t-c{
+    text-align: center;
+}
+.w-384{
+    width: 384px;
+}
+.w-588{
+    width: 588px;
+}
+
+body{
+    p {
+        font-size: 20px;
+    }
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+.Joanne{
+    background: url("../img/photo-1552393700-42696fb89bfa.png") no-repeat center/cover;
+    height: 958px;
+    color: white;
+    margin-bottom: 64px;
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    h1{
+        font-size: 80px;
+    }
+    p{
+        font-size: 24px;
+    }
+    li{
+        margin-right: 16px;
+        position: relative;
+        transform: translateY(0);
+        transition: .3s;
+    }
+    li:hover{
+        transform: translateY(-5px);
+    }
+    li::after{
+        content:'';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 0;
+        border-bottom: 1px solid white;
+        transition: .3s;
+    }
+    li:hover:after{
+        left: 0;
+        right: 0;
+    }
+}
+.about{
+    
+    h2{
+        font-size: 64px;
+    }
+    .borderBottom{
+        padding-bottom: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom: 1px solid #000;
+    }
+    ul{
+        block-size: 236px;
+    }
+    li p::before{
+        content: "";
+        font-size: 100px;
+        color: #891818;
+    }
+}
+
+.myBrand{
+    color: #fff;
+    background-color: #000;
+
+    h2{
+        font-size: 64px;
+        padding-top: 64px;
+        margin-bottom: 16px;
+    }
+    .b-img{
+        background: url("../img/photo-1564864310852-e1e98eb07010 (1).png") no-repeat center/cover;
+        width: 792px;
+        height: 416px;
+    }
+    .cuffLogo{
+        background: url("../img/photo-1499971856191-1a420a42b498.png") no-repeat center/cover;
+        width: 588px;
+        height: 416px;
+        margin-left: 24px;
+    }
+    .handLogo{
+        background: url("../img/photo-1582126892906-5ba118eaf46e.png") no-repeat center/cover;
+        width: 588px;
+        height: 416px;
+    }
+    .content-img{
+        margin-bottom: 160px;
+    }
+}
+.container-warp{
+    width: 1920px;
+    margin: 0 auto;
+}
+.otherWorks{
+    width: 1200px;
+    h2{
+        font-size: 64px;
+    }
+    .content-img div:nth-child(2){
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .content-img-middle{
+        display: flex;
+        .item-img-left{
+            margin-right: 24px;
+        }   
+    }
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    h2{
+        font-size: 64px;
+        padding-top: 64px;
+    }
+    p:nth-child(3){
+        padding-bottom: 80px;
+    }
+}
